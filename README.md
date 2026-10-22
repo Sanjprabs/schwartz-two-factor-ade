@@ -3,8 +3,8 @@
 [![CI Build & Tests](https://github.com/Sanjprabs/schwartz-two-factor-ade/actions/workflows/ci.yml/badge.svg)](https://github.com/Sanjprabs/schwartz-two-factor-ade/actions)
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2610.21145-b31b1b.svg)](https://arxiv.org/)
-[![SSRN](https://img.shields.io/badge/SSRN-7604358-navy.svg)](https://ssrn.com/)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.21145-b31b1b.svg)](https://arxiv.org/abs/2610.21145)
+[![SSRN](https://img.shields.io/badge/SSRN-7604358-navy.svg)](https://ssrn.com//sol3/papers.cfm?abstract_id=7604358)
 
 **Authors:** Sanjith Prabhu & Dr. Daniel J. Duffy  
 **Paper:** *Pricing American Commodity Options Under the Schwartz Two-Factor Model Using the Alternating Direction Explicit (ADE) Method* (`arXiv:2610.21145` | `SSRN: 7604358`)
