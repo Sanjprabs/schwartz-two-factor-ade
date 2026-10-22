@@ -1,0 +1,25 @@
+name: CI Build & Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Configure CMake (Release)
+      run: cmake -B build -DCMAKE_BUILD_TYPE=Release
+
+    - name: Compile targets
+      run: cmake --build build --config Release -j 2
+
+    - name: Run Unit Test Suite
+      working-directory: build
+      run: ctest --output-on-failure
