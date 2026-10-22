@@ -119,3 +119,40 @@ schwartz-two-factor-ade/
 ├── tests/
 │   └── unit_tests.cpp           # Automated verification suite
 └── paper/                       # Working paper PDF and LaTeX manuscript
+```
+
+---
+
+## Build & Run Instructions
+
+### Prerequisites
+* A C++17 compatible compiler (`g++ >= 9`, `clang++ >= 10`, or `MSVC >= 2019`)
+* `CMake >= 3.14`
+
+### Compiling and Running with CMake
+```bash
+git clone [https://github.com/Sanjprabs/schwartz-two-factor-ade.git](https://github.com/Sanjprabs/schwartz-two-factor-ade.git)
+cd schwartz-two-factor-ade
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build . -j4
+
+# Run unit tests
+./schwartz_unit_tests
+
+# Run full paper replication and benchmark suite
+./schwartz_ade_suite
+```
+
+---
+
+## Citation
+
+```bibtex
+@techreport{prabhu2026schwartz,
+  title   = {Pricing American Commodity Options Under the Schwartz Two-Factor Model Using the Alternating Direction Explicit (ADE) Method},
+  author  = {Prabhu, Sanjith and Duffy, Daniel J.},
+  year    = {2026},
+  note    = {Working Paper, arXiv:2610.21145 and SSRN: 7604358}
+}
+```
